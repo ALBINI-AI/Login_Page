@@ -1,4 +1,3 @@
 function fun(){
-
     alert("Success");
 }
