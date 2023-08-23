@@ -1,3 +1,3 @@
-function fun(){
+function alert_fun(){
     alert("Done");
 }
