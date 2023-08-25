@@ -9,25 +9,39 @@
 <body>
     <div id="Outer">
         <h2 id="heading">Welcome!!</h2>
-        <form >
+        <form onsubmit="fun()" id="myForm" >
             <div class="elements">
-                <label for="name">Full Name</label><br>
-                <input id="name" type="text">
+                <label for="name" >Full Name</label>
+                <input id="name" type="text" name="name" value=" " >
+                <img src="./Images/error.png" id="nameError" class="imgError" style="float:left;display: none" >
+                <p id="nameP" class="error"></p>
             </div>
             <div class="elements">
-                <label for="username">UserName</label><br>
+                <label for="username">UserName</label>
                 <input id="username" type="text">
+                <img src="./Images/error.png" id="UNameError" class="imgError" style="float:left;display: none" >
+                <p id="usernameP" class="error"></p>
             </div>
             <div class="elements">
-                <label for="email">Email</label><br>
+                <label for="email">Email</label>
                 <input id="email" type="email">
+                <img src="./Images/error.png" id="emailError" class="imgError" style="float:left;display: none" >
+                <p id="emailP" class="error"></p>
             </div>
             <div class="elements">
-                <label for="pswrd">Password</label><br>
-                <input id="pswrd" type="password"><br><br>
+                <label for="pswrd">Password</label>
+                <input id="pswrd" type="password">
+                <img src="./Images/error.png" id="pswrdError" class="imgError" style="float:left;display: none" >
+                <p id="pswrdP" class="error"></p>
             </div>
             <div class="elements">
-                <button type="submit" onclick="alert_fun()">Submit</button>
+                <label for="confirmPswrd">Confirm Password</label>
+                <input id="confirmPswrd" type="password">
+                <img src="./Images/error.png" id="confirmPswrdError" class="imgError" style="float:left;display: none" >
+                <p id="confirmPswrdP" class="error"></p>
+            </div>
+            <div class="elements">
+                <input type="submit" id="button"  >
             </div>
         </form>
     </div>
